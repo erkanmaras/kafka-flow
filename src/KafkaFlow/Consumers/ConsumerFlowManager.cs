@@ -113,7 +113,6 @@ namespace KafkaFlow.Consumers
         {
             this.heartbeatTokenSource?.Cancel();
             this.heartbeatTokenSource?.Dispose();
-
             this.heartbeatTask?.GetAwaiter().GetResult();
             this.heartbeatTask?.Dispose();
         }
